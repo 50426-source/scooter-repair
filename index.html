@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voltfix: electric scooter repair workshop</title>
+  <meta name="description" content="Electric scooter repair with fixed prices, a written warranty and courier pickup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Voltfix, back to top">
+      <span class="signal-dot" aria-hidden="true"></span>Voltfix
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="visually-hidden" aria-label="Toggle menu">
+    <label for="nav-toggle" class="burger" aria-hidden="true"><span class="burger-bar"></span></label>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="#breakdowns">Breakdowns</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#warranty">Warranty</a></li>
+      </ul>
+      <a class="nav-phone" href="tel:+15550100199">+1 555 010 0199</a>
+      <a class="btn btn-signal" href="tel:+15550100199">Urgent Master Call</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">We Will Fix Your Electric Scooter in 30 Minutes with a Warranty</h1>
+        <p>Fixed prices, written warranty, and a courier who picks up your scooter and brings it back.</p>
+        <a class="btn btn-signal btn-large" href="#request">Call a Courier</a>
+      </div>
+    </section>
+
+    <section class="section" id="breakdowns" aria-labelledby="breakdowns-title">
+      <h2 id="breakdowns-title">Typical breakdowns and fixed prices</h2>
+      <p class="section-lead">The price you see is the price you pay. Parts are included.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Battery pack replacement</h3>
+          <p>Range dropped or the scooter shuts off under load.</p>
+          <dl class="facts">
+            <div><dt>Price</dt><dd>$120</dd></div>
+            <div><dt>Deadline</dt><dd>2 hours</dd></div>
+          </dl>
+        </article>
+        <article class="card">
+          <h3>Battery cell balancing</h3>
+          <p>Uneven cells that cut range, without replacing the pack.</p>
+          <dl class="facts">
+            <div><dt>Price</dt><dd>$45</dd></div>
+            <div><dt>Deadline</dt><dd>3 hours</dd></div>
+          </dl>
+        </article>
+        <article class="card">
+          <h3>Controller replacement</h3>
+          <p>No power, stuttering motor or error codes on the display.</p>
+          <dl class="facts">
+            <div><dt>Price</dt><dd>$85</dd></div>
+            <div><dt>Deadline</dt><dd>1 hour</dd></div>
+          </dl>
+        </article>
+        <article class="card">
+          <h3>Controller diagnostics</h3>
+          <p>Full test of controller, throttle and wiring with a written report.</p>
+          <dl class="facts">
+            <div><dt>Price</dt><dd>$15</dd></div>
+            <div><dt>Deadline</dt><dd>30 minutes</dd></div>
+          </dl>
+        </article>
+        <article class="card">
+          <h3>Brake pads and adjustment</h3>
+          <p>Weak or noisy braking. New pads, disc check and cable setup.</p>
+          <dl class="facts">
+            <div><dt>Price</dt><dd>$25</dd></div>
+            <div><dt>Deadline</dt><dd>30 minutes</dd></div>
+          </dl>
+        </article>
+        <article class="card">
+          <h3>Brake system service</h3>
+          <p>Hydraulic bleed, new disc and lever replacement.</p>
+          <dl class="facts">
+            <div><dt>Price</dt><dd>$60</dd></div>
+            <div><dt>Deadline</dt><dd>1 hour</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="warranty" aria-labelledby="warranty-title">
+      <h2 id="warranty-title">Warranty periods</h2>
+      <p class="section-lead">Every repair is covered in writing. Keep your receipt and we do the rest.</p>
+
+      <div class="grid">
+        <article class="card card-signal">
+          <h3>Batteries</h3>
+          <p class="big">6 months</p>
+          <p>Covers capacity loss and cell failure.</p>
+        </article>
+        <article class="card card-signal">
+          <h3>Controllers</h3>
+          <p class="big">6 months</p>
+          <p>Free replacement if the same fault returns.</p>
+        </article>
+        <article class="card card-signal">
+          <h3>Brakes and labour</h3>
+          <p class="big">3 months</p>
+          <p>Free re-adjustment and rework of our own repair.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="prices" aria-labelledby="request-title">
+      <div class="form-wrap" id="request">
+        <div class="form-intro">
+          <h2 id="request-title">Calculate your repair</h2>
+          <p class="section-lead">Tell us what is wrong. We confirm the exact price by phone in 10 minutes, before the courier leaves.</p>
+        </div>
+
+        <form class="form" action="#" method="get">
+          <div class="field">
+            <label for="model">Scooter make/model</label>
+            <input type="text" id="model" name="model" placeholder="Xiaomi Mi 4 Pro" required minlength="2" autocomplete="off">
+            <p class="hint">Enter the make and model, at least 2 characters.</p>
+          </div>
+
+          <div class="field">
+            <label for="defect">Defect description</label>
+            <textarea id="defect" name="defect" rows="4" placeholder="Shuts off when I go uphill" required minlength="10"></textarea>
+            <p class="hint">Describe the problem in at least 10 characters.</p>
+          </div>
+
+          <div class="field">
+            <label for="phone">Owner's phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 555 010 0199" required pattern="\+?[0-9\s\-()]{7,}" autocomplete="tel">
+            <p class="hint">Use digits only, with an optional + at the start.</p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email for the quote</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required autocomplete="email">
+            <p class="hint">Enter a valid email, like name@example.com.</p>
+          </div>
+
+          <button class="btn btn-signal btn-large" type="submit">Calculate repair cost</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <section aria-labelledby="footer-nav">
+        <h2 id="footer-nav" class="footer-title">Navigate</h2>
+        <ul class="footer-links">
+          <li><a href="#breakdowns">Breakdowns</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#warranty">Warranty</a></li>
+          <li><a href="#request">Call a courier</a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="footer-visit">
+        <h2 id="footer-visit" class="footer-title">Visit the workshop</h2>
+        <!-- Replace the address and coordinates with your real workshop details -->
+        <address>
+          12 Volt Street, Unit 4<br>
+          GPS 40.0000° N, 70.0000° E
+        </address>
+        <p>Mon to Fri: 09:00 to 20:00<br>Sat: 10:00 to 18:00<br>Sun: courier requests only</p>
+      </section>
+
+      <section aria-labelledby="footer-legal">
+        <h2 id="footer-legal" class="footer-title">Legal</h2>
+        <p>Voltfix Repair LLC. Registration no. 000000000000.</p>
+        <p>Prices are fixed per listed defect. Warranty applies to work and parts replaced by us.</p>
+      </section>
+
+      <section aria-labelledby="footer-theme">
+        <h2 id="footer-theme" class="footer-title">Display</h2>
+        <label class="switch" for="theme-toggle">
+          <input type="checkbox" id="theme-toggle" class="visually-hidden" role="switch">
+          <span class="switch-track" aria-hidden="true"></span>
+          <span>Invert theme</span>
+        </label>
+      </section>
+    </div>
+    <p class="copyright">© 2026 Voltfix Repair LLC</p>
+  </footer>
+
+</body>
+</html>
